@@ -1,0 +1,69 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateOwnerInput {
+  name: String!
+}
+
+input CreateUserInput {
+  name: String!
+  ownerId: Int!
+  type: String
+}
+
+input CreateWordInput {
+  locale: String!
+  name: String!
+}
+
+type Mutation {
+  createOwner(createOwnerInput: CreateOwnerInput!): Owner!
+  createUser(createUserInput: CreateUserInput!): User!
+  createWord(createWordInput: CreateWordInput!): Word!
+  removeOwner(id: Int!): Owner!
+  removeWord(id: Int!): Word!
+  updateOwner(updateOwnerInput: UpdateOwnerInput!): Owner!
+  updateWord(updateWordInput: UpdateWordInput!): Word!
+}
+
+type Owner {
+  id: Int!
+  name: String!
+  users: [User!]
+}
+
+type Query {
+  getUser(id: Int!): [User!]!
+  owner(id: Int!): Owner!
+  owners: [Owner!]!
+  users: [User!]!
+  word(id: Int!): Word!
+  words: [Word!]!
+}
+
+input UpdateOwnerInput {
+  id: Int!
+  name: String
+}
+
+input UpdateWordInput {
+  id: Int!
+  locale: String
+  name: String
+}
+
+type User {
+  id: Int!
+  name: String!
+  owner: Owner!
+  ownerId: Int!
+  type: String
+}
+
+type Word {
+  id: Int!
+  locale: String!
+  name: String!
+  type: String
+}

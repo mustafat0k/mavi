@@ -1,0 +1,67 @@
+@import "theme";
+
+// Settings for the `<body>` element.
+$body-bg: #fafafb !default;
+$body-color: $gray !default;
+
+$background-color-dark: #292A32;
+$background-color-light: #FBFAF8;
+
+$complimentary-color-dark: #393B43;
+$complimentary-color-light: #FEFFFF;
+
+$dark-lightest: #222;
+$dark-lighter: #333;
+$dark : #0000;
+$bluemoon: #1544ac;
+
+$text-primary : $dark;
+$text-secondary: $white;
+$text-tertiary: $bluemoon;
+
+$bg-primary: #292A32;
+$bg-secondary: #FBFAF8;
+$border-primary: 1px solid #393B43;
+$border-secondary: 1px solid  #FEFFFF;
+
+$bg:  #242526;
+$bg-accent: #484a4d;
+$text-color: #dadce1;
+$border: 1px solid #474a4d;
+
+$nav-size: 60px;
+$border-radius: 8px;
+$speed: 500ms;
+
+
+$font-family: 'Roboto', sans-serif;
+$font-title: 17px;
+$font-desc: 13px;
+//
+$font-xs: 14px;
+$font-sm: 16px;
+$font-md: 17px;
+$font-lg: 20px;
+$font-xlg: 35px;
+//
+$font-weight: 400 ;
+$font-medium: 500 ;
+$font-bold: 600 ;
+$font-black: 800 ;
+// 
+$font-color:#222; // default
+$font-dark:#333;
+$font-deepdark: #000;
+/*** TYPOGRAPHY **/
+
+h1,h2,h3,h4,h5{}
+p {}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+
+
+
+ 

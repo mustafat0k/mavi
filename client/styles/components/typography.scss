@@ -1,0 +1,66 @@
+// Typography
+
+// Fonts
+$sans-serif: 'Roboto', 'sans-serif';
+
+$text-primary:'';
+$bg-primary:'';
+$description-gray:''; 
+$description:'';
+
+.base-text{
+  
+    font-size:16px;
+    font-weight: 400;
+    
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 { margin:0 }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size:1.5em; }
+    h4 { font-size: 1.3rem; }
+    h5 { font-size: 1.2rem; }
+    h6 { font-size: 1.1rem; }
+      
+
+    a,div,li,p{
+        font-size:15px;
+        font-weight:400;
+        color:#000;
+    }
+  
+    p.desc{
+        color:gray;
+    }
+  
+    // Sizes
+    $sizes: 13, 14, 15, 16, 17, 18, 19, 25, 30;
+    @each $size in $sizes {
+      .size-#{$size} {
+        font-size: #{$size}px!important;
+      }
+    }
+ 
+
+
+  // Weights
+  $light: 300;
+  $normal: 400;
+  $semibold: 500;
+  $bold: 600;
+  $bolder: 700;
+  $boldest: 800;
+
+  .bold{
+    font-weight: $bold!important;
+  }
+  .bolder{
+    font-weight: $bolder!important;
+  }
+  .boldest{
+    font-weight: $boldest!important;
+  }
+
+} 
+
+
